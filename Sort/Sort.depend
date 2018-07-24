@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1512004506 source:c:\users\104\desktop\sort\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1513251211 source:c:\users\104\desktop\sort\sort\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1513251255 source:c:\users\104\desktop\sort\sort\sort.c
+	"Sort.h"
+	<stdio.h>
+
+1513249926 c:\users\104\desktop\sort\sort\sort.h
+
+1513251212 source:f:\¾ÉµÄ\sort\sort\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1513251256 source:f:\¾ÉµÄ\sort\sort\sort.c
+	"Sort.h"
+	<stdio.h>
+
+1513249928 f:\¾ÉµÄ\sort\sort\sort.h
+
