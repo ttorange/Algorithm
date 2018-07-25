@@ -10,7 +10,7 @@ void Swap(ElementType *a,ElementType *b)
     *b=t;
 }
 
-void InsertSort(ElementType A[],int N)//²åÈëÅÅÐò
+void InsertSort(ElementType A[],int N)//æ’å…¥æŽ’åº
 {
     int P,i;
     ElementType Tmp;
@@ -18,16 +18,16 @@ void InsertSort(ElementType A[],int N)//²åÈëÅÅÐò
     {
         Tmp=A[P];
         for(i=P;i>0&&A[i-1]>Tmp;i--)
-            A[i]=A[i-1];//ÓëÒÑÅÅÔªËØ±È½Ï
-        A[i]=Tmp;//·ÅÈë¸ÃÎ»ÖÃ
+            A[i]=A[i-1];
+        A[i]=Tmp;
     }
 }
-void ShellSort(ElementType A[],int N)//Ï£¶ûÅÅÐò
+void ShellSort(ElementType A[],int N)
 {
     int Si,D,P,i;
     ElementType Tmp;
-    int Sedgewick[]={929,505,209,109,41,19,5,1,0};//ÔöÁ¿ÐòÁÐ
-    for(Si=0;Sedgewick[Si]>=N;Si++);//ÁîÔöÁ¿ÐòÁÐÐ¡ÓÚÐòÁÐ³¤¶È
+    int Sedgewick[]={929,505,209,109,41,19,5,1,0};//å¢žé‡åºåˆ—
+    for(Si=0;Sedgewick[Si]>=N;Si++);//ä»¤å¢žé‡åºåˆ—å°äºŽåºåˆ—é•¿åº¦
 
     for(D=Sedgewick[Si];D>0;D=Sedgewick[++Si])
     for(P=D;P<N;P++){
@@ -38,7 +38,7 @@ void ShellSort(ElementType A[],int N)//Ï£¶ûÅÅÐò
     }
 }
 
-void BubbleSort(ElementType A[],int N)//Ã°ÅÝ
+void BubbleSort(ElementType A[],int N)//å†’æ³¡æŽ’åº
 {
     int P,i;
     int flag;
@@ -92,4 +92,3 @@ void QuickSort(ElementType A[],int N)
 {
     Qsort(A,0,N-1);
 }
-
