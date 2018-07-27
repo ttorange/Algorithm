@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1510146299 source:e:\Á·Ï°\data structure\queue\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tree.h"
+
+1510041526 source:e:\Á·Ï°\data structure\queue\queue.c
+	"Queue.h"
+
+1510041526 e:\Á·Ï°\data structure\queue\queue.h
+	<stdio.h>
+	<stdlib.h>
+
+1510146750 e:\Á·Ï°\data structure\queue\tree.h
+	"Queue.h"
+	"stack.h"
+
+1510146749 source:e:\Á·Ï°\data structure\queue\tree.c
+	"tree.h"
+	<stdio.h>
+	<stdlib.h>
+
+1510146373 source:e:\Á·Ï°\data structure\queue\stack.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
+1510145772 e:\Á·Ï°\data structure\queue\stack.h
+	"tree.h"
+
