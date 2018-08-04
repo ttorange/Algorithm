@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-void HeapAdjust(int *a,int i,int size)  //调整堆 
+void HeapAdjust(int *a,int i,int size)  //调整堆 ，复杂度lgn 
 {
     int lchild=2*i;       //i的左孩子节点序号 
     int rchild=2*i+1;     //i的右孩子节点序号 
@@ -20,7 +20,7 @@ void HeapAdjust(int *a,int i,int size)  //调整堆
         if(max!=i)
         {
             swap(a[i],a[max]);
-            HeapAdjust(a,max,size);    //避免调整之后以max为父节点的子树不是堆 
+            HeapAdjust(a,max,size);    //递归调用HeapAdjust，避免调整之后以max为父节点的子树不是堆 
         }
     }        
 }
@@ -34,7 +34,7 @@ void BuildHeap(int *a,int size)    //建立堆
     }    
 } 
 
-void HeapSort(int *a,int size)    //堆排序 
+void HeapSort(int *a,int size)    //堆排序 ，n次heapadjust，复杂度为 nlgn 
 {
     int i;
     BuildHeap(a,size);
