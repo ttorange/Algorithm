@@ -54,7 +54,7 @@ void BubbleSort(ElementType A[],int N)//冒泡排序
         if(flag==0)break;
     }
 }
-ElementType Median3(ElementType A[],int Left,int Right)
+ElementType Median(ElementType A[],int Left,int Right)
 {
     int Center=(Left+Right)/2;
     if(A[Left]>A[Center])
@@ -72,7 +72,7 @@ void Qsort(ElementType A[],int Left,int Right)
 {
     int Pivot,Cutoff,Low,High;
     if(Cutoff<=Right-Left){
-        Pivot=Median3(&A,Left,Right);
+        Pivot=Median(&A,Left,Right);
         Low=Left;
         High=Right-1;
         while(1){

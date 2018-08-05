@@ -25,7 +25,7 @@ void HeapAdjust(int *a,int i,int size)  //调整堆 ，复杂度lgn
     }        
 }
 
-void BuildHeap(int *a,int size)    //建立堆 
+void BuildHeap(int *a,int size)    //建立堆 （自顶向下） 
 {
     int i;
     for(i=size/2;i>=1;i--)    //非叶节点最大序号值为size/2 
