@@ -32,7 +32,7 @@ void Merge(int array[], int left, int m, int right)
             aux[k] = array[i++];
             continue;
         }
-        //如果第一个数组的当前元素 比 第二个数组的当前元素小，将 第一个数组的当前元素复制到 临时数组中
+        //如果第一个数组的当前元素 比 第二个数组的当前元素小，将   第一个数组的当前元素复制到 临时数组中
         if (array[i] < array[j])
         {
             aux[k] = array[i++];

@@ -37,7 +37,7 @@ void QuickSort(int A[],int p,int r)
 int main()
 {
    int A[]={99,45,789,121,496,494,94,13,54,48,15,95,11,468,77,13,1,654,821,84};
-
+   QuickSort(&A,0,19);
    int i;
    for(i=0;i<20;i++)
    {

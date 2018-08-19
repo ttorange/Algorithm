@@ -11,17 +11,17 @@ int main()
        printf("%6d",A[i]);
    }
    printf("\n快速排序\n");
-   QuickSort(&A,20);
+    QuickSort(A,20);
     for(i=0;i<20;i++)
     printf("%5d",A[i]);
 
     printf("\n希尔排序后为\n");
-   ShellSort(&A,20);
+   ShellSort(A,20);
    for(i=0;i<20;i++)
     printf("%5d",A[i]);
 
 printf("\n插入排序\n");
-   InsertSort(&A,20);
+   InsertSort(A,20);
    for(i=0;i<20;i++)
     printf("%5d",A[i]);
 
